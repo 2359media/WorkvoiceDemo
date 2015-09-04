@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/WorkvoiceDemo.iml" filepath="$PROJECT_DIR$/WorkvoiceDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/example.iml" filepath="$PROJECT_DIR$/example/example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library-release/library-release.iml" filepath="$PROJECT_DIR$/library-release/library-release.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sender/sender.iml" filepath="$PROJECT_DIR$/sender/sender.iml" />
+    </modules>
+  </component>
+</project>

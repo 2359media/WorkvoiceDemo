@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="library-release-unspecified">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/example/build/intermediates/exploded-aar/WorkvoiceDemo/library-release/unspecified/res" />
+      <root url="jar://$PROJECT_DIR$/example/build/intermediates/exploded-aar/WorkvoiceDemo/library-release/unspecified/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/example/build/intermediates/exploded-aar/WorkvoiceDemo/library-release/unspecified/jars/libs/eventbus-2.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/example/build/intermediates/exploded-aar/WorkvoiceDemo/library-release/unspecified/jars/libs/okhttp-2.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/example/build/intermediates/exploded-aar/WorkvoiceDemo/library-release/unspecified/jars/libs/retrofit-1.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/example/build/intermediates/exploded-aar/WorkvoiceDemo/library-release/unspecified/jars/libs/okhttp-urlconnection-2.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/example/build/intermediates/exploded-aar/WorkvoiceDemo/library-release/unspecified/jars/libs/commons-io-2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/example/build/intermediates/exploded-aar/WorkvoiceDemo/library-release/unspecified/jars/libs/ormlite-android-4.48.jar!/" />
+      <root url="jar://$PROJECT_DIR$/example/build/intermediates/exploded-aar/WorkvoiceDemo/library-release/unspecified/jars/libs/gson-2.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/example/build/intermediates/exploded-aar/WorkvoiceDemo/library-release/unspecified/jars/libs/ormlite-core-4.48.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
