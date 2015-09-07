@@ -40,6 +40,12 @@ public class ExampleActiviy extends Activity {
         adapter = new JobAdapter();
         lv.setAdapter(adapter);
         adapter.addData(jobAdapter.getAll());
+        if(adapter.getCount()==0){
+            findViewById(R.id.Tvempty).setVisibility(View.VISIBLE);
+        } else {
+            findViewById(R.id.Tvempty).setVisibility(View.GONE);
+
+        }
         //step 1: register with workvoice system.
         String gcmSenderId ="1223805314"; //ask your system admin your gcmSender id, we will use it for register your device with Google cloud message
         String userId =""; //your system uniqueID, it should be user id, It define by your system to query when need to send a command.
@@ -76,6 +82,12 @@ public class ExampleActiviy extends Activity {
     public void onEvent(NewJobEvent event){
         DBJobAdapter jobAdapter =new DBJobAdapter(ExampleActiviy.this);
         adapter.addData(jobAdapter.getAll());
+        if(adapter.getCount()==0){
+            findViewById(R.id.Tvempty).setVisibility(View.VISIBLE);
+        } else {
+            findViewById(R.id.Tvempty).setVisibility(View.GONE);
+
+        }
     }
 
     @Override

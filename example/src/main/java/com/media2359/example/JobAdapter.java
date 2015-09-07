@@ -44,9 +44,11 @@ public class JobAdapter extends BaseAdapter {
         LayoutInflater inflater = LayoutInflater.from(viewGroup.getContext());
         TextView textView  = (TextView) inflater.inflate( android.R.layout.simple_list_item_1,viewGroup,false);
         textView.setText(jobModels.get(i).toString());
-        if(jobModels.get(i).getAnswerId().equals("1")){
+        if(jobModels.get(i).getAnswerId()==null){
+            textView.setTextColor(Color.GRAY);
+        }else if(jobModels.get(i).getAnswerId().equals("1")){
             textView.setTextColor(Color.GREEN);
-        } else {
+        } else if(jobModels.get(i).getAnswerId().equals("2")){
             textView.setTextColor(Color.RED);
         }
         return textView;
@@ -54,7 +56,7 @@ public class JobAdapter extends BaseAdapter {
 
     public void addData(List<JobModel> data){
         if(data!=null && data.isEmpty() == false){
-            jobModels.addAll(data);
+            jobModels = data;
             notifyDataSetChanged();
         }
     }

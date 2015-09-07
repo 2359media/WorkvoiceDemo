@@ -20,7 +20,6 @@ public class MyService extends Service implements WorkVoiceListener {
 
     @Override
     public IBinder onBind(Intent intent) {
-        // TODO: Return the communication channel to the service.
         throw new UnsupportedOperationException("Not yet implemented");
     }
 
@@ -51,12 +50,17 @@ public class MyService extends Service implements WorkVoiceListener {
 //            lv.setAdapter(adapter);
             EventBus.getDefault().post(new NewJobEvent());
         } else {
+            JobModel jobModel = new JobModel();
+            jobModel.id = model.getWorkvoiceId();
+            jobModel.command = model.getMessage();
+            jobAdapter.inserRecord(jobModel);
             if (!TextUtils.isEmpty(model.getAsrOutput())) {
                 Toast.makeText(this, "output=" + model.getAsrOutput() + " not matched!", Toast.LENGTH_LONG).show();
             } else {
                 Toast.makeText(this, "don't have output", Toast.LENGTH_LONG).show();
 
             }
+            EventBus.getDefault().post(new NewJobEvent());
         }
 
     }
