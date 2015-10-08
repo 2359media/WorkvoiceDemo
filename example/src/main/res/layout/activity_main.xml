@@ -8,6 +8,11 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Send a WorkVoice Push using the Sender App"/>
+    <CheckBox
+        android:id="@+id/cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Offline ASR"/>
     <ListView
         android:id="@+id/lv"
         android:layout_width="fill_parent"
