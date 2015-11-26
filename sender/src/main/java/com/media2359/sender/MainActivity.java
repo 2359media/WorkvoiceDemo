@@ -43,18 +43,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onSendClick(View v){
-//        WorkvoiceModel workvoiceModel =new WorkvoiceModel();
-//        workvoiceModel.setAppId("phu tang");
-//        workvoiceModel.setAutorepeat(false);
-//        workvoiceModel.setId("1");
-//        workvoiceModel.setMessage("Command: clean the floor");
-//        workvoiceModel.setTimeout(5000);
-//
-//        List<CommandModel> commandModels =new ArrayList<>();
-//        commandModels.add(new CommandModel("ok","1",false));
-//        commandModels.add(new CommandModel("reject","2",false));
-//        workvoiceModel.setAnswerlist(commandModels);
-//        new RequestData().execute(workvoiceModel);
 
         EditText sender= (EditText) findViewById(R.id.editText4);
         EditText message= (EditText) findViewById(R.id.editText);
